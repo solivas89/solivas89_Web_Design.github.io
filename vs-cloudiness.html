@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Design Visualization - Cloudiness</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href = "styles.css">
+ </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand p-3 mb-2 bg-info text-white" href="index.html">Lattitude</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="vs-maxtemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="vs-humidity.html">Humidity</a>
+            <a class="dropdown-item" href="vs-cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="vs-windspeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="comparisons.html">Comparison</a></li>
+        <li class="nav-item"><a class="nav-link" href="pandas-data.html">Data</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="jumbotron container-fluid">
+    <div class="row">
+        <div class="col-md-8 my-4">
+            <div class="p-3 mb-2 bg-white text-dark">         
+                <div class="text-info">           
+                    <h1>Cloudiness</h1>
+                </div>
+              <hr>
+              <br>
+              <img src="assets/Fig3.png" alt="vs. cloudiness" style= "height: 30%; width:30%" class="rounded mx-auto d-block float-left">
+              <p>As expected, the weather becomes significantly warmer as one approacjes the equator (0 Deg. 
+                  Latitude). More interestingly, however, is the fact that the souther hemisphere tends to be
+                  warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at 
+                  the time of the year this data was gathered. 
+              </p>
+            </div>
+        </div>
+        <div class="col-md-4 my-4">
+            <div class="p-3 mb-2 bg-white text-dark">
+                <div class="text-info">
+                    <h2>Visualizations</h2>
+                </div>
+              <hr>
+              <div class="container">
+                <div class="row justify-content-md-center">
+                  <div class= "col-md-6">
+                      <a href="vs-maxtemp.html"><img id ="fig1" src="assets/Fig1.png" alt="vs. maxtemp" style= "height:125px; width:125px" class="rounded mx-auto d-block"></a>
+                  </div> 
+                  <div class= "col-md-6">
+                    <a href="vs-humidity.html"><img id ="fig2" src="assets/Fig2.png" alt="vs. humidity" style= "height:125px; width:125px" class="rounded mx-auto d-block"></a>
+                  </div>
+                </div>
+                <div class="row justify-content-md-center">
+                  <div class= "col-md-6">
+                    <a href="vs-cloudiness.html"><img id = "fig3" src="assets/Fig3.png" alt="vs. cloudiness" style= "height:125px; width:125px" class="rounded mx-auto d-block"></a>
+                  </div> 
+                  <div class= "col-md-6">
+                    <a href="vs-windspeed.html"><img id = "fig4" src="assets/Fig4.png" alt="vs. windspeed" style= "height:125px; width:125px" class="rounded mx-auto d-block"></a>
+                  </div> 
+                </div> 
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
